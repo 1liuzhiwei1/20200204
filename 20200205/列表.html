@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<!--
+        	作者：770037674@qq.com
+        	时间：2020-02-05
+        	描述：样式style
+        -->
+        <style>
+        	p{
+        		color: aliceblue;
+        	}
+        	/*
+        	 * list-style: none;
+        	 * 去掉点,去点序号
+        	 */
+        	li{
+        		list-style: none;
+        		width: 110px;
+        		height: 40px;
+        		text-align: center;/*文字水平居中*/
+        		line-height: 40px;/*和高度一样就像   文字垂直居中*/
+        		/*矩形弧形*/
+        		border-radius: 5px;
+        	}
+        	/*伪类  hover
+        	 鼠标触碰
+        	 * */
+        	li:hover{
+        		color: white;
+        		background-color: red;
+        		/*鼠标经过变小手*/
+        		cursor: pointer;
+        		/*动画效果*/
+        		transition: 1s linear;
+        	}
+        </style>
+		
+	</head>
+	<body>
+		<p>天气不错</p>
+		<font color="aliceblue">天气不错</font>
+		<!--
+        	作者：770037674@qq.com
+        	时间：2020-02-05
+        	描述：无序列表
+        -->
+        <ul>
+        	<li>热门</li>
+        	<li>头条</li>
+        	<li>百度</li>
+        </ul>
+        
+        
+        <!--
+        	作者：770037674@qq.com
+        	时间：2020-02-05
+        	描述：有序列表
+        -->
+        <ol>
+        	<li>视屏</li>
+        	<li>榜单</li>
+        	<li>搞笑</li>
+        </ol>
+        
+	</body>
+</html>
