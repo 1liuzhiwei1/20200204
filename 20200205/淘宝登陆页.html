@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>淘宝登陆页</title>
+		<style>
+			body{
+				/*添加背景图片*/
+				background-image: url(https://gtms01.alicdn.com/tps/i1/TB1GTCYLXXXXXcHXpXXcoeQ2VXX-2500-600.jpg);
+				/*背景图片填充*/
+				background-size: cover;
+				/*背景图片不重复*/
+				background-repeat: no-repeat;
+				padding-left: 60%;/*???????*/
+			}
+			
+			
+			
+			/*
+			rgb(红绿蓝)
+			白255 255 255
+			黑0 0 0
+			*/
+			div{
+				width: 21.875rem;
+				height: 21.925rem;
+				background-color: #f6e8f4;
+				padding-left: 40px;
+			}
+			
+			
+			
+			/**
+			 * 标签选择器  input{}
+			   属性选择器  input[type="search"]
+			 */
+			input[type="search"]{
+				background-image: url(../图片/user.svg);
+				background-position: left;    /*背景图片左对齐*/
+				background-size: 15px;      /*背景图片宽高15 */
+				background-repeat: no-repeat;  /*背景图片不重复*/
+				text-indent: 15px;	/*缩进15px*/
+				border: 0px;/*去掉边框*/
+				width: 300px;
+				height: 42px;
+			}
+			
+			
+
+			
+			
+			input[type="password"]{
+				background-image: url(../图片/Password.svg);
+				background-position: left;    /*背景图片左对齐*/
+				background-size: 15px;      /*背景图片宽高15 */
+				background-repeat: no-repeat;  /*背景图片不重复*/
+				text-indent: 15px;	/*首行缩进15像素*/
+				border: 0px;/*去掉边框*/
+				width: 300px;
+				height: 42px;
+			}
+			button{
+				margin-top: 15px;
+				width: 300px;
+				height: 42px;
+				background-color: #ff4400;
+				color: white;
+				border: 0px;
+				border-radius: 3px;/*边框圆弧*/
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div >
+			<br />
+			<h2>密码登录</h2>
+			<br />
+			<input type="search" placeholder="邮箱/手机号/用户名" />
+			<br />
+			<br />
+			<br />
+			<input type="password" placeholder="请输入密码" />
+			<br />
+			<br />
+			<button>登录</button>
+		</div>
+		
+	</body>
+</html>
