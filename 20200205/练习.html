@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#first{
+				width: 210px;
+				height: 40px;
+				text-align: center;/*文字水平居中*/
+				line-height: 40px;/*和高度一样就像   文字垂直居中*/
+				/*矩形弧形*/
+				border-radius: 0px;
+				/*浮动*/
+				color: white;
+				background-color: #FF0000;
+				
+			}
+			/*伪类  hover
+			 鼠标触碰
+			 * */
+			 
+			 #first:hover{
+				color: white;
+				background-color: red;
+				/*鼠标经过变小手*/
+				cursor: pointer;
+				/*动画效果*/
+				transition: 1s linear;
+			} 
+			#one{
+				text-align: center;
+				margin-left: 31.25rem;
+				margin-top: 21.875rem;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body background="../图片/sy_51552288528.jpg">
+		<form>
+		<table  cellpadding="10" cellspacing="0" id="one" >
+			<tr>
+				<th colspan="2" >密码登陆</th>
+			</tr>
+			<tr>
+				<td>用户名:</td>
+				<td>
+					<input type="text" placeholder="请输入6-12位用户名" style="background-image: url(../图片/user.svg); background-size: 15px 15px; background-repeat: no-repeat; text-indent: 15px;"  />
+				</td>
+			</tr>
+			
+			<tr>
+				<td>密	码:</td>
+				<td>
+					<input type="password" placeholder="请输入密码" style="background-image: url(../图片/Password.svg); background-size: 15px 18px; background-repeat: no-repeat; text-indent: 15px;"/>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="登陆" id="first" />
+				</td>
+			</tr>
+		
+		
+		
+		
+		
+		</table>
+		</form>
+	</body>
+</html>
