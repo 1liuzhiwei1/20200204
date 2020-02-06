@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择器</title>
+		<style>
+			/*优先级   id  >类  >标签   */
+			
+			/*标签选择器*/
+			div{
+				width: 50px;
+				height: 50px;
+				background-color: #3385FF;
+				/* border: 1px solid #FF0000; */
+				border: 1px dashed #FF0000;
+			}
+			/*类选择器*/
+			.blueDiv{
+				background-color: blue;
+			}
+			/*id选择器*/
+			#whiteDiv{
+				background-color: #F6E8F4;
+			}
+			#div1{
+				width: 100px;
+			}
+			/*属性选择器*/
+			input[type="text"]{
+				background-color: #0000FF;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" />
+		<div class="blueDiv"></div>
+		<div class="blueDiv" id="div1"></div>
+		<div></div>
+		<div></div>
+		<div id="whiteDiv"></div>
+		
+	</body>
+</html>

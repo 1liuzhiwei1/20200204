@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*
+			   块级元素:display:block
+				行内元素:display:inline
+				块级元素能包含行内元素
+				行内元素不能包含块级元素
+				块级元素可以设置宽高
+				行内元素不可以设置宽高,
+				行内元素可以修改成为块级元素  display:block
+			 */
+			div{
+				height: 100px;
+				background-color: #0000FF;
+				width: 100px;
+				border: 1px solid #FF0000;
+				/* display: inline; */
+			}
+			.first{
+				background-color: #E91E63;
+			}
+			a{
+				width: 100px;
+				display: inline-block;
+			}
+			/* a{
+				display: block;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="first">1</div>
+		<div class="sec">2</div>
+		<a>百度一下</a>
+		
+		<a>购物商城</a>
+		<a>购物商城</a>
+		<img src="../../图片/Password.svg" width="100px" height="100px" />
+		<span>123456</span>
+		<a>购物商城</a>
+		<p>dsa</p>
+		
+	</body>
+</html>
+
+<!-- 
+ 块级元素在浏览器显示时，通常会以新行来开始（和结束）。例子：<h1>, <p>, <ul>, <table>
+ 内联元素在显示时通常不会以新行开始。例子：<b>, <td>, <a>, <img>
+ img:是行级标签,但是可以设置宽高,这是为什么?因为设置的是图片的宽高,而不是标签的
+ 
+ 
+ -->

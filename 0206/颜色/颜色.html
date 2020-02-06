@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*
+			rgb
+			rgba
+			16进制   
+			颜色名字    
+			*/
+			h1{
+				/* color: rgb(255,0,0); *//*rgb  红 绿 蓝*/
+				color: rgba(255,0,0,0.5);  /*    0-1  透明度*/
+				
+			}
+			/* 
+			线性渐变
+			(to top/left/right, red  ,blue)
+				(red 80%,blue)
+				(red ,blue,yellow)
+				(-45deg,red,blue)
+			 */
+			
+			#div1{
+				width: 100px;
+				height: 100px;
+				background-image: linear-gradient(-45deg,red,blue);/*渐变色  偏移45度  红色--过渡->蓝色     线性渐变*/  
+			}
+			#div2{
+				width: 100px;
+				height: 100px;
+				background-image: linear-gradient(to left,red,blue,yellow);  /*从右到左   默认是上到下    */
+			}
+			#div3{
+				width: 100px;
+				height: 100px;
+				background-image: radial-gradient(red,blue,yellow);)   /* 径向渐变   */ 
+			}
+		</style>
+	</head>
+	<body>
+		<h1>2020辛福生活</h1>
+		<div id="div1">
+			
+		</div>
+		<div id="div2">
+			
+		</div>
+		<div id="div3">
+			
+		</div>
+	</body>
+</html>
