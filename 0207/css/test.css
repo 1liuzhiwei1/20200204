@@ -1,0 +1,19 @@
+a:visited {
+	color: red;
+}
+/*被访问过*/
+a:link {
+	color: blue;
+}
+/*正在访问*/
+a:hover {
+	color: pink;
+}
+/*触碰*/
+/* a:active {
+	
+} */
+/*未被访问过*/
+a:active {
+	color: #3388FF;
+}

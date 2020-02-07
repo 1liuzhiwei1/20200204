@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+
+			#father {
+				width: 100px;
+				height: 100px;
+				background-color: #00FF00;
+				
+				margin-left: 10px;     /*son相对于body*/
+				
+				/*相对于father*/
+				/* position: relative;
+				left: 10px; */
+			}
+
+			#son {
+				width: 80px;
+				height: 80px;
+				background-color: royalblue;
+				position: absolute;
+				left: 100px;
+
+			}
+			#all{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<div id="father">
+				<div id="son"></div>
+			</div>
+		</div>
+	</body>
+</html>

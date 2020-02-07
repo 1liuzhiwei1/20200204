@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>哆啦a梦</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			#a {
+				margin: 0 auto;
+				width: 500px;
+				height: 800px;
+				background-color: aliceblue;
+				border: 1px solid black;
+			}
+
+			#face {
+				margin: 50px auto 0px;
+				width: 200px;
+				height: 200px;
+				background-color: #079ee7;
+				border-radius: 100px 100px 60px 60px;
+				border: 1px solid black;
+			}
+
+			#face2 {
+				width: 180px;
+				height: 190px;
+				background-color: white;
+				border-radius: 120px 120px 80px 80px;
+				margin: 10px auto 10px;
+				padding-top: 30px;
+				box-sizing: border-box;
+			}
+
+			#body1 {
+				width: 200px;
+				height: 200px;
+				background-color: #079ee7;
+				margin: 0px auto 0px;
+				border-radius: 30px 30px 30px 30px;
+			}
+
+			#belly {
+				width: 170px;
+				height: 180px;
+				background-color: white;
+				margin: 0px auto;
+				border-radius: 85px 85px 80px 80px;
+				padding-top: 120px;
+				box-sizing: border-box;
+			}
+
+			#belly2 {
+				width: 100px;
+				height: 50px;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 0 0 50px 50px;
+				border: 1px solid black;
+			}
+
+			#foot {
+				width: 204px;
+				/* border: 1px solid black; */
+				margin: 0px auto;
+			}
+
+			#LeftFoot {
+				width: 100px;
+				height: 50px;
+				background-color: white;
+				border: 1px solid black;
+				float: left;
+				border-radius: 40px 0px 0px 30px;
+			}
+
+			#RightFoot {
+				width: 100px;
+				height: 50px;
+				background-color: white;
+				border: 1px solid black;
+				float: left;
+				border-radius: 0px 40px 30px 0px;
+			}
+
+			.k {
+				clear: both;
+			}
+			#line1{
+				width: 20px;
+				height: 0px;
+				border: 1px solid black;
+				border-radius: 1px;
+				margin: 5px auto;
+			}
+			#line2{
+				width: 12px;
+				height: 0px;
+				border: 1px solid black;
+				margin: 5px auto;
+				transform: rotate(90deg);
+			}
+			#bozi{
+				width: 170px;
+				background-color: #dc0330;
+				height: 10px;
+				margin: 0px 15px 0px;
+				float: left;
+			}
+			#bizi{
+				width: 30px;
+				height: 30px;
+				background-color: red;
+				border: 1px solid black;
+				margin: 0px auto;
+				border-radius: 15px;
+				box-shadow: 0px 0px 10px black;
+			}
+			#whiteD{
+				width: 12px;
+				height: 12px;
+				background-color: white;
+				border: 1px solid black;
+				margin: 3px 3px;
+				border-radius: 6px;
+				box-shadow: 0px 0px 10px black;
+			}
+			#line6{
+				width: 99px;
+				height: 0px;
+				border: 1px solid black;
+				transform: rotate(90deg);
+				margin:50px auto 0px;
+			}
+			#line7{
+				width: 50px;
+				height: 0px;
+				border: 1px solid black;
+				/* transform: rotate(90deg); */
+				margin-top: 10px;
+			}
+			#line8{
+				width: 50px;
+				height: 0px;
+				border: 1px solid black;
+				/* transform: rotate(145deg); */
+				margin-top: 20px;
+			}
+			#line10{
+				width: 50px;
+				height: 0px;
+				border: 1px solid black;
+				/* transform: rotate(90deg); */
+				margin-left: 125px;
+				position: absolute;
+				top: 185px;
+			}
+			#line9{
+				width: 50px;
+				height: 0px;
+				border: 1px solid black;
+				/* transform: rotate(145deg); */
+				margin-left: 125px;
+				margin-bottom: 0px;
+				
+			}
+			#line11{
+				width: 80px;
+				height: 0px;
+				border: 1px solid black;
+				margin: 14px auto;
+			}
+			#eye1{
+				width: 50px;
+				height: 50px;
+				background-color:white ;
+				position: absolute;
+				top: 65px;
+				left: 330px;
+				border-radius: 25px;
+				border: 1px solid black;
+			}
+			#eye2{
+				width: 50px;
+				height: 50px;
+				background-color:white ;
+				position: absolute;
+				top: 65px;
+				left: 240px;
+				border-radius: 25px;
+				border: 1px solid black;
+			}
+			#eye11{
+				width: 30px;
+				height: 30px;
+				background-color:black ;
+			/* 	position: absolute;
+				top: 65px;
+				left: 330px; */
+				border-radius: 15px;
+				float: left;
+				margin-top: 5px;
+				background-image: radial-gradient(white 20%,black 80%);
+			}
+			#eye21{
+				width: 30px;
+				height: 30px;
+				background-color:black ;
+				/* position: absolute;
+				top: 65px;
+				left: 230px; */
+				border-radius: 15px;
+				float: right;
+				margin-top: 5px;
+				background-image: radial-gradient(white 20%,black 80%);
+			}
+			#handLeft{
+				width: 50px;
+				height: 50px;
+				background-color:white ;
+				position: absolute;
+				top: 280px;
+				left: 410px;
+				border-radius: 25px;
+			}
+			#handRight{
+				width: 50px;
+				height: 50px;
+				background-color:white ;
+				position: absolute;
+				top: 280px;
+				left: 164px;
+				border-radius: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<div id="eye1">
+				<div id="eye11"></div>
+			</div>
+			
+			<div id="eye2">
+				<div id="eye21"></div>
+			</div>
+			
+			<div id="handLeft"></div>
+			<div id="handRight"></div>
+			
+			<div id="face">
+				
+				<div id="face2">
+					
+					<div id="bizi">
+						<div id="whiteD">
+						</div>
+					</div>
+					
+					<div id="line6"></div>
+					<div id="line7"></div>
+					<div id="line8"></div>
+					<div id="line9"></div>
+					<div id="line10"></div>
+					<div id="line11"></div>
+					
+					
+				</div>
+			</div>
+			
+			
+
+
+			<div id="body1">
+				<div id="bozi"></div>
+				<div id="belly">
+					<div id="belly2"></div>
+				</div>
+				<div class="k"></div>
+				<div id="line1"></div>
+				<div id="line2"></div>
+			</div>
+
+
+
+
+
+			<div id="foot">
+				<div id="LeftFoot"></div>
+				<div id="RightFoot"></div>
+				<div class="k"></div>
+			</div>
+		</div>
+	</body>
+</html>

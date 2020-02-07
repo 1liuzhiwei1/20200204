@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#topp {
+				width: 100%;
+				height: 50px;
+				/* background-color: #00FF00; */
+				border: 1px solid black;
+				position: fixed;
+				top: 0px;
+			}
+			#midd {
+				width: 100%;
+				height: 1800px;
+				/* background-color: #00FF00; */
+				border: 1px solid black;
+				position: absolute;
+			}
+			#bottom {
+				width: 100%;
+				height: 50px;
+				/* background-color: #00FF00; */
+				border: 1px solid black;
+				position: fixed;
+				bottom: 0px;
+			}
+			#topp h1{
+				line-height: 50px;
+				width: 50%;
+				float: left;
+			}
+			#toppRight{
+				width: 50%;
+				/* border: 1px solid black; */
+				float: left;
+			}
+			#toppRight ul{
+				list-style: none;
+				float: left;
+				margin-left: 60%;
+			}
+			#toppRight ul li{
+				float: left;
+
+				line-height:50px ;
+				margin-left: 100px;
+			}
+			#bottom ul{
+				list-style: none;
+			}
+			#bottom ul li{
+				float: left;
+				line-height:50px ;
+				margin-left: 20%;
+			}
+			#midd table{
+				border: 1px;
+				background-color: #3385FF;
+				position: fixed;
+				top: 50px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div id="topp">
+				<h1>微信</h1>
+				<div id="toppRight" >
+					<ul>
+						<li>搜索</li>
+						<li>添加</li>
+					</ul>
+				</div>
+			</div>
+			<div id="midd">
+				<table border="1px">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+					</tr><tr>
+						<td></td>
+						<td></td>
+					</tr><tr>
+						<td></td>
+						<td></td>
+					</tr><tr>
+						<td></td>
+						<td></td>
+					</tr><tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div id="bottom">
+				<ul>
+					<li>消息</li>
+					<li>通讯录</li>
+					<li>朋友圈</li>
+					<li>我的</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

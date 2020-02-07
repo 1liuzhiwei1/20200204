@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			/*
+			 相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置。
+			 相对与原来自己的位置,但是原来自己的位置还是占得的
+			 */
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: #00FF00;
+				
+				
+				position: absolute;    /*绝对定位  脱离了文档流    相对定位没有脱离了文档流*/
+/* 				position: relative; */   
+
+
+				left: 50px;
+				top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		4种方式:
+			static  默认  和普通的一样
+			relative:相对定位  相对与原来的位置
+			absolute:绝对定位  是相对与已定为的父级元素,如果父级元素没有,那就是相对与body
+			fixed相对于视图定位  相对于当前的窗口
+		 -->
+		 
+		 <div></div>
+		 hello world
+		 
+		 
+		 
+	</body>
+</html>

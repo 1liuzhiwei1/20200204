@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#father{
+				border: 5px solid black;
+			}
+			#son1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				float: left;
+			}
+			#son2{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				float: left;
+			}
+			#a{
+				width: 250px;
+				height: 100px;
+				background-color: pink;
+			}
+			#span1{
+				/* 清楚浮动 */
+				clear: both;
+				
+			}
+			#k{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 高度塌陷 -->
+		<div id="father">
+			<div id="son1"></div>
+			<div id="son2"></div>
+			<div id="span1"></div> 
+			  <!-- 目的就是为了清楚浮动 -->
+			<div id="k"></div>
+		</div>
+		<div id="a"></div>
+		
+	</body>
+</html>

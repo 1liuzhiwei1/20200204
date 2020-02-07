@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#big{
+				border: 1px solid red;
+				width: 140px;
+				height: 240px;
+			}
+			#a{
+				width: 120px;
+				height: 100px;
+				background-color: #00FF00;
+				float: left;
+				
+				/* s设置透明度 */
+				/* opacity: 0.5; */
+			}
+			#b{
+				width: 100px;
+				height: 110px;
+				background-color: blue;
+				/* float: left; */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 浮动会脱离文档流 -->
+		<div id="big">
+			<div id="a"></div>
+			<span>今天出看一个bug,非常难解决</span>
+			<div id="b"></div>
+		
+		</div>
+	</body>
+</html>
+<!-- 
+图文环绕,浮动可以做到
+ -->

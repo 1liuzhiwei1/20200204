@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#on{
+				font-size: 50px;
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+				background-color: #FF0000;
+				/* vertical-align: top; */
+			}
+			#sp{
+				font-size: 50px;
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+				background-color: #00FF00;
+				
+			}
+			img{
+				/* vertical-align: top;      */      /*默认是基线对齐**/
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- 格式1 -->
+		<span id="sp">1</span>
+		<div id="on">2</div>
+		<!-- 格式2 -->
+		<span id="sp">f</span><div id="on">g</div>    <!-- 基线对齐  -->
+		<br />
+		<!-- 两种格式的细微区别 -->
+		
+		<img src="../图片/pc_1c6e30772d5e4103103bd460913332f9.png" />
+		<div id="on">g</div>
+		
+	</body>
+</html>
